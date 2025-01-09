@@ -25,14 +25,14 @@
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            console.log("Entered password:", password);  // Log the entered password to the console
+            console.log("Entered password:", password);  // Log the entered password
             
-            if (password === "newPassword457") {  // Change the password here
-                console.log("Password is correct");  // Log if the password is correct
+            if (password === "newPassword456") {  // Correct password comparison with string
+                console.log("Password is correct");  // Log correct password
                 document.getElementById('projects-content').style.display = "block";
                 document.querySelector('.password-container').style.display = "none";
             } else {
-                console.log("Incorrect password");  // Log if the password is incorrect
+                console.log("Incorrect password");  // Log incorrect password
                 alert("Incorrect password. Please try again.");
             }
         }
