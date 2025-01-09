@@ -19,15 +19,16 @@
     <div id="projects-content" style="display: none;">
         <h3>My Projects</h3>
         <p>Here are some of the tech and marketing projects I've worked on...</p>
-        <!-- My Example1 -->
     </div>
 
     <script>
         function checkPassword() {
+            // Get the value entered in the password field
             const password = document.getElementById('password').value;
             console.log("Entered password:", password);  // Log the entered password
-            
-            if (password === "newPassword456") {  // Correct password comparison with string
+
+            // Check if the entered password matches the correct password
+            if (password === "newPassword456") {  // Correct password is a string enclosed in quotes
                 console.log("Password is correct");  // Log correct password
                 document.getElementById('projects-content').style.display = "block";
                 document.querySelector('.password-container').style.display = "none";
